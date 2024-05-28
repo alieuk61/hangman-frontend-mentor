@@ -1,0 +1,8 @@
+// import base styles
+@import './base/_typography';
+
+// the rest
+@import './pages/homepage';
+@import './pages/categoriespage';
+@import url('./pages/_guidepage.scss');
+

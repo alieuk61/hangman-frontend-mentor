@@ -1,0 +1,50 @@
+@use '../base/variables' as vars;
+@import '../base/_mixins.scss';
+
+
+// for pages that isnt the homepage, we will have them have a background of that darkblue colour then we will add the same image as the home page and have a mixblend
+.categories-page{
+    padding: 0 80px;
+    @include grid-center;
+
+    header{
+        @include flex-center;
+        width: 100%;
+
+        .backbutton__div{
+            width: 400px;
+        }
+    }
+}
+
+
+
+.categories__div{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+
+    .router__link{
+       height: 100%;
+       width: 100%;
+    @include grid-center;
+    }
+    
+    div{
+        
+        background: #2463FF;
+        box-shadow: inset 0px -2px 0px 3px #140E66, inset 0px 1px 0px 6px #3C74FF;
+        border-radius: 40px;
+        width: 384px;
+        height: 150px;
+        @include pointer;
+
+        h4{
+            color: white;
+            font-size: vars.$heading-m;
+        }
+}
+}

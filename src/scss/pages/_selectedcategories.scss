@@ -1,0 +1,59 @@
+@use '../base/variables' as vars;
+@import '../base/mixins';
+
+.game-page{
+
+    padding: 60px 112px 80px 112px;
+
+    header{
+        @include flex-center;
+        justify-content: space-between;
+
+        div{
+            @include flex-center;
+                
+        }
+    }
+}
+
+.hidden-word__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .word__div{
+        display: flex;
+
+        .hidden-card__wrapper {
+                width: 108px;
+                height: 108px;
+                border-radius: 20px;
+        
+                .card__hidden {
+                    height: 100%;
+                    width: 100%;
+                    @include grid-center;
+                }
+            }
+    }
+
+}
+
+.keypad_section{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 32px;
+
+    div{
+        background: #FFFFFF;
+        border-radius: 24px;
+        justify-content: center;
+        width: 109px;
+        height: 84px;
+        @include grid-center;
+        color: vars.$dark-navy;
+        font-size: vars.$heading-m;
+
+    }
+
+}

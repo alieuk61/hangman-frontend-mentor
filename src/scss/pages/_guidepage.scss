@@ -1,0 +1,51 @@
+@use '../base/_variables.scss' as vars;
+@import '../base/mixins';
+
+.how-to-page{
+    background-color: vars.$dark-navy;
+    mix-blend-mode: darken;
+    padding: 50px;
+    min-height: 100vh;
+
+    header{
+        @include flex-center;
+
+        .backbutton__div{
+            width: 470px;
+
+        }
+    }
+
+    .how-to__title{
+        font-size: vars.$heading-xl
+    }
+
+    .instructions__div{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+
+        .how-to-div {
+                background-color: white;
+                width: 384px;
+                height: 500px;
+                border-radius: 40px;
+                padding: 50px;
+
+                h2{
+                    font-size: vars.$heading-l;
+                    color: vars.$blue;
+                }
+
+                h3{
+                    font-size: vars.$heading-m;
+                    color: vars.$dark-navy;
+                }
+
+                p{
+                    color: vars.$blueish-grey;
+                    font-size: vars.$body;
+                }
+            }
+    }
+}

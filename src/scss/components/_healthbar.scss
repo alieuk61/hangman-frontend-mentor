@@ -1,0 +1,8 @@
+@use '../base/variables' as vars;
+@import '../base/mixins';
+
+
+.healthbar__div{
+    @include flex-center;
+    gap: 10px;
+}

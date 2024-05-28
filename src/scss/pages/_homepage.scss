@@ -1,0 +1,28 @@
+@import '../base/mixins';
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/images/background-desktop.svg');
+    background-position: 0% 30%;
+
+    a{
+        text-decoration: none
+    }
+}
+
+.homepage{
+
+    @include grid-center;
+
+    .start__div {
+            @include grid-center;
+        }
+}
